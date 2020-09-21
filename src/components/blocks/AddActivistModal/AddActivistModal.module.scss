@@ -1,0 +1,42 @@
+@import 'src/scss/utils/settings';
+
+.modal-form {
+    width: 100%;
+    padding: 1.5rem 2rem;
+
+    height: calc(664px - 192px);
+    overflow-y: scroll;
+
+    &__head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__add-button{
+        font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $font-size-xl;
+        line-height: getValueInREM(22px);
+        color: map-get($primary-pallet, dark );
+        padding-bottom: 0.1em;
+        border-bottom: 1px solid map-get($primary-pallet, dark );
+        width: auto;
+        margin-left: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.06);
+
+        &-wrapper{
+            width: 88px;
+            height: 88px;
+        }
+    }
+}

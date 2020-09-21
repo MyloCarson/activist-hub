@@ -1,0 +1,28 @@
+@import "../utils/settings";
+
+.button{
+    font-size: $font-size-xl;
+    font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: getValueInREM(22px);
+    border: none;
+    border-radius: $border-radius-xs;
+    color: map-get($white-pallet, white );
+    padding: 1.1em 2.4em;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: -2px -2px 2px rgba(204, 204, 204, 0.25), 2px 2px 2px rgba(204, 204, 204, 0.25);
+
+
+    &--primary{
+        background-color: map-get($primary-pallet, dark );
+
+        &--with-border{
+            border: 3px solid map-get($primary-pallet, dark );
+            color: map-get($primary-pallet, dark );
+            padding: 0.9em 2.4em;
+        }
+    }
+
+    
+}

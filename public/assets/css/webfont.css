@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "League Spartan";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.woff2") format("woff2"),
+        url("/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.woff") format("woff"),
+        url("/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tw Cen MT";
+    font-weight: bold;
+    font-style: normal;
+    src: url("/assets/fonts/TwCenMT/TwCenMT-Bold.woff") format("woff"),
+        url("/assets/fonts/TwCenMT/TwCenMT-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Tw Cen MT";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/TwCenMT/TwCenMT-Regular.woff") format("woff"),
+        url("/assets/fonts/TwCenMT/TwCenMT-Regular.ttf") format("truetype");
+    font-display: swap;
+    /* Modern Browsers */ 
+}

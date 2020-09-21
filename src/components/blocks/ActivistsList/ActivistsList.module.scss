@@ -1,0 +1,26 @@
+@import 'src/scss/utils/settings';
+
+
+.list{
+    background: map-get($white-pallet, white );
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+    border-radius: $border-radius-xs;
+
+    &-head{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        padding: 0.75rem 1.5rem;
+
+        &__title{
+            font-size: $font-size-sm;
+            color: $accent-color;
+            font-weight: normal;
+        }
+
+
+        &__left-pane{
+            margin-left: calc(64px + 3rem);
+        }
+    }
+}

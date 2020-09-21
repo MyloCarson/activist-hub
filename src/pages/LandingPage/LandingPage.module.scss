@@ -1,0 +1,47 @@
+@import 'src/scss/utils/settings';
+
+.landing-page{
+
+
+    &__main{
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(auto, 49vw) 1fr;
+        height: 100vh;
+        background-color: map-get($white-pallet, white);
+
+        @include xxlarge{
+            grid-template-columns: minmax(auto, 49%) 1fr;
+        }
+
+        &-title{
+            font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: $font-size-max;
+            line-height: getValueInREM(48px);
+            color: map-get($black-pallet, mid );
+            margin-bottom: 2em;
+        }
+
+        &__left-pane{
+
+            background: url('/assets/images/background/activists.png') no-repeat;
+            background-size: cover;
+            height: 100%;
+
+        }
+        &__right-pane{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 6vw;
+
+            @include xxlarge{
+                padding: 0 4vw;
+            }
+            
+        }
+    }
+}

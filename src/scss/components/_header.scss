@@ -1,0 +1,42 @@
+@import "../utils/settings";
+//styles that belongs to header
+
+.header{
+
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+
+    box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.25);
+    background-color: map-get($white-pallet, white);
+
+    &-logo{
+        font-family: 'League Spartan' , Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $font-size-max;
+        line-height: getValueInREM(40px);
+        letter-spacing: 0.05em;
+        color: map-get($primary-pallet, dark );
+        
+    }
+
+    &--white{
+        color: map-get($white-pallet, white);
+    }
+
+    &-alternate{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: $z-index-2;
+        filter: unset;
+        background-color: transparent;
+        box-shadow: unset;
+    }
+}

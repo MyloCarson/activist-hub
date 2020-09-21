@@ -1,0 +1,79 @@
+@import 'src/scss/utils/settings';
+
+$highlight: #808080;
+
+.grid-item{
+
+    &-card{
+        box-shadow: -1px -1px 1px rgba(204, 204, 204, 0.25), 1px 1px 1px rgba(204, 204, 204, 0.25);
+    }
+
+    &__head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__clap{
+
+            &-container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            &-count{
+                font-size: $font-size-sm;
+                color: $highlight;
+                margin-left: 0.6em;
+            }
+        }
+    }
+
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.06);
+
+        &-wrapper{
+            width: 88px;
+            height: 88px;
+        }
+    }
+
+    &__content{
+
+        margin-top: 1.5rem;
+
+        &-title{
+            font-size: $font-size-xl;
+            font-weight: 400;
+            line-height: getValueInREM(21px);
+            color: map-get($black-pallet, mid );
+            margin-bottom: 1rem;
+        }
+
+        &-detail{
+            font-weight: normal;
+            line-height: getValueInREM(24px);
+            color: map-get($black-pallet, mid );
+            margin-bottom: 1rem;
+        }
+
+        &-extra{
+            font-size: $font-size-sm;
+            line-height: getValueInREM(15px);
+            color: map-get($black-pallet, mid );
+        }
+
+        &-highlight{
+            color: $highlight;
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,12 @@
+@import "../utils/settings";
+
+.card{
+    background-color: map-get($white-pallet, white );
+    padding: 2rem 1.27rem;
+
+    &--sm{
+        width: auto;
+        height: auto; //auto
+        border-radius: $border-radius-xs;
+    }
+}

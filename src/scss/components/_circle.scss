@@ -1,0 +1,25 @@
+@import "../utils/settings";
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    &--primary{
+        background-color: map-get($primary-pallet, mid );
+    }
+
+    &--sm{
+        height: 48px;
+        width: 48px;
+    }
+
+    &--md{
+        height: 88px;
+        width: 88px;
+    }
+}

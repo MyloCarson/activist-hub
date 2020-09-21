@@ -1,0 +1,53 @@
+@import './settings';
+
+h1, h2, h3, h4, h5,h6{
+    font-family: 'League Spartan' , Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    transition: all linear 0.2s;
+}
+
+// h1{
+//     font-size: getValueInEM(60px);
+//     line-height: getValueInREM(60px);
+//     color: map-get($text-color-pallet, main );
+
+//     @include desktop{
+//         font-size: getValueInEM(82px);
+//         line-height: getValueInREM(90px);
+//     }
+// }
+// h4{
+//     font-size:  getValueInEM(28px);
+//     line-height: 140%;
+
+//     @include desktop{
+//         font-size:  getValueInEM(64px);
+//         line-height: 120%;
+//     }
+// }
+
+// h6{
+//     font-size: getValueInEM(38px);
+
+//     line-height: 140%;
+// }
+
+p{
+    font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $font-size-md;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 160%;
+    hyphens: auto;
+    transition: all linear 0.2s;
+    color: map-get($black-pallet, black );
+
+}
+
+li{
+    font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
+    transition: all linear 0.2s;
+}

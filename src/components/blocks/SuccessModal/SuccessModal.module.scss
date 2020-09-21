@@ -1,0 +1,15 @@
+@import 'src/scss/utils/settings';
+
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--highlight{
+        font-weight: 700;
+    }
+    &__detail{
+        margin-top: 0.68rem;
+    }
+}

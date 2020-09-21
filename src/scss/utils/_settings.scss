@@ -1,0 +1,79 @@
+//colors
+$primary-pallet: (dark:  #6A0000, mid: rgba(106, 0, 0, 0.12));
+$accent-color: #A1A4B8;
+$form-highlight-color: #E1E1E1;
+$black-pallet: (mid: #121212, black:#000000);
+$white-pallet: (mid: #FBFBFB, white: #ffffff);
+$placeholder-color: #B4B4B4;
+$border-color: #EEEEEE;
+
+$base-font-size: 16px;
+
+@function getValueInREM ($value) {
+    @return ($value/$base-font-size) * 1rem;
+}
+
+@function getValueInEM ($value) {
+    @return ($value/$base-font-size) * 1em;
+}
+
+//font-sizes
+
+$font-size-xs: getValueInREM(12px);
+$font-size-sm: getValueInREM(14px);
+$font-size-md: getValueInREM(16px);
+$font-size-lg: getValueInREM(18px);
+$font-size-xl: getValueInREM(20px);
+$font-size-2xl: getValueInREM(24px);
+$font-size-max: getValueInREM(32px);
+
+//border-radius
+
+$border-radius-xs: 2px;
+
+//z-index;
+
+$z-index-1: 9;
+$z-index-2: 99;
+
+// widths
+$max-width: 1440px;
+
+
+//breakpoints
+$bp-small: (
+  min-width: 320px,
+);
+$bp-medium: (
+  min-width: 768px,
+);
+$bp-large: (
+  min-width: 992px,
+);
+$bp-xlarge: (
+  min-width: 1200px,
+);
+
+$bp-xxlarge: (
+  min-width: $max-width,
+);
+
+
+//media query
+@mixin desktop {
+    @media #{$bp-large} {
+      @content;
+    }
+  }
+
+@mixin xlarge {
+    @media #{$bp-xlarge} {
+      @content;
+    }
+  }
+
+@mixin xxlarge {
+    @media #{$bp-xxlarge} {
+      @content;
+    }
+  }

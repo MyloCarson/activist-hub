@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import routes from "src/config/routes";
+import { getUniqueKey } from "src/utils";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Suspense fallback={<div>Loading....</div>}>
+          <Switch>
+          {routes.map(({ path, component, exact }) => (
+            <Route
+              key={getUniqueKey()}
+              path={path}
+              exact={exact}
+              component={component}
+            />
+          ))}
+          {/* <Route path="/404" component={PageNotFound} />
+              <Redirect to={{ pathname: '/404' }} /> */}
+          </Switch>
+        </Suspense>
+    </Router>
   );
 }
 

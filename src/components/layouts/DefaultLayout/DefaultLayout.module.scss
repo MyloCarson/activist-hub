@@ -1,0 +1,12 @@
+
+@import 'src/scss/utils/settings';
+
+
+.default-layout{
+    background-color: map-get($white-pallet, mid );
+
+    &__main{
+        padding: 0 6vw;
+        margin-top: 6vh;
+    }
+}
