@@ -6,7 +6,7 @@
         font-family: 'Tw Cen MT', Verdana, Geneva, Tahoma, sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: $font-size-sm;
+        font-size: $font-size-md;
         line-height: getValueInREM(15px);
         &::placeholder{
             color: $placeholder-color;
@@ -17,7 +17,7 @@
         border: 1px solid $form-highlight-color;
         border-radius: $border-radius-xs;
         color: map-get($black-pallet, mid );
-        padding: 1.6em 1.2em;
+        padding: 1.25em 1.2em;
         width: auto;
     }
 

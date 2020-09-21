@@ -79,7 +79,7 @@ const AddActivistModal = ({onClose, newActivistEvent}) => {
                                 <img src={imageData} className={styles['modal-form__image']}  alt="avatar"/>
                             </div>
                         )}
-                        <div className={styles['modal-form__add-button']} onClick={selectFile} >Add a Photo</div>
+                        <div className={styles['modal-form__add-button']} onClick={selectFile} >{!imageData ? 'Add a Photo': 'Edit Photo'}</div>
                         <input ref={inputSelectRef} hidden type="file" accept="image/*" onChange={handleFileChange} />
                     </div>
     
